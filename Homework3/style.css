@@ -1,42 +1,85 @@
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url(/Homework3/fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(/Homework3/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url(/Homework3/fonts/Gilroy-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
-}
-
-a {
   text-decoration: none;
+  box-sizing: border-box;
 }
 
-.top {
-  padding-bottom: 96px;
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.conteiner {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .header {
-  margin-top: 51px;
+  margin-top: 40px;
+  margin-bottom: 84px;
 }
 
-.header__homelink {
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 533px;
+  margin-top: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__homelink {
   font-family: "Gilroy-SemiBold";
   font-size: 14px;
   line-height: 16px;
-  /* identical to box height */
 
   color: #f25822;
 }
 
-.header__link {
+.nav__link {
   font-family: "Gilroy-SemiBold";
   font-size: 14px;
   line-height: 16px;
 }
 
 .top__content {
-  padding-top: 94.71px;
-  padding-bottom: 259.45px;
+  margin-bottom: 162px;
+}
+
+.top__content__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40.94px;
 }
 
 .title {
   margin-bottom: 17px;
+  width: 522px;
   font-family: "Gilroy-Bold";
   font-size: 60px;
   line-height: 70px;
@@ -44,21 +87,30 @@ a {
   color: #000000;
 }
 .text {
-  font-family: "Gilroy-Medium";
+  width: 466px;
+  font-family: "Gilroy-Light";
   font-size: 20px;
   line-height: 23px;
 
   color: #888888;
 }
 
-.button {
+.top__buttons {
   margin-top: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 72px;
+}
+
+.button {
+  width: 140px;
+  height: 50px;
+
   background: #f25822;
   box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
   border-radius: 50px;
-}
 
-.button__text {
   font-family: "Gilroy-Bold";
   font-size: 15px;
   line-height: 18px;
@@ -66,10 +118,17 @@ a {
   color: #ffffff;
 }
 
-.button__link {
+.button__link__text {
   font-family: "Gilroy-Bold";
   font-size: 15px;
   line-height: 18px;
 
   color: #aaaaaa;
+}
+
+.top__logo__wrapper {
+  margin-top: 97px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
 }
