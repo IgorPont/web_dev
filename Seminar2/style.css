@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
-  src: url(/Seminar2/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
+  src: url();
+} */
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
   text-decoration: none;
   box-sizing: border-box;
 
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
 
@@ -24,6 +24,11 @@ img {
   max-width: 100%;
 }
 
+/* .center {
+  padding-left: calc(50% - 573px);
+  padding-right: calc(50% - 573px);
+} */
+
 .conteiner {
   width: 1146px;
   margin: 0 auto;
@@ -35,6 +40,8 @@ img {
 }
 
 .header {
+  display: flex;
+
   padding-top: 39px;
   padding-bottom: 39px;
 }
@@ -53,13 +60,15 @@ img {
 }
 
 .top__content {
+  display: flex;
   margin-top: 160px;
   margin-bottom: 197px;
 }
 
 .top__content__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 128px;
 }
 
@@ -134,9 +143,15 @@ img {
   border-radius: 5px;
 }
 
+.top__logos {
+  display: flex;
+}
+
 .top__logos__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 71px;
 }
 
 .content {
@@ -193,4 +208,46 @@ img {
   color: #ffffff;
 
   opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .top {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 120px;
+  }
+
+  .conteiner {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .top__logos__wrapper {
+    gap: 32px;
+    min-width: 650px;
+    margin: auto;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, 362px);
+    gap: 30px;
+  }
+
+  .item__big {
+    grid-column: span 1;
+    grid-row: span 1;
+    gap: 30px;
+  }
+
+  .item__big img {
+    width: 98px;
+  }
 }
