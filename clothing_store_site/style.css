@@ -192,3 +192,77 @@ img {
   line-height: 19px;
   color: #f26376;
 }
+
+@media (max-width: 1024px) {
+  /* в браузере проверяем на 765px */
+
+  .top {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .conteiner {
+    width: 735px;
+  }
+
+  .top__header__wrapper {
+    width: 768px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 32px;
+    padding-right: 36px;
+  }
+
+  .header__right {
+    justify-content: space-between;
+  }
+
+  .top__preview__wrapper {
+    width: 768px;
+    gap: 0px;
+  }
+
+  .header_preview {
+    width: 386px;
+  }
+
+  .logo_big {
+    padding-top: 138px;
+    padding-left: 39px;
+    padding-right: 33px;
+  }
+
+  .top__content__wrapper {
+    padding-top: 64px;
+    padding-bottom: 71px;
+  }
+
+  .content__сategories {
+    margin-bottom: 109px;
+    gap: 19px;
+  }
+
+  .item {
+    width: 232px;
+  }
+
+  .subtitle {
+    margin-bottom: 73px;
+    gap: 3px;
+  }
+
+  .item__produkts {
+    gap: 16px;
+  }
+
+  .item__product__content {
+    width: 315px;
+    margin-left: 18px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .content__products__footer {
+    margin-top: 33px;
+  }
+}
