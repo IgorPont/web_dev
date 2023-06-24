@@ -37,11 +37,11 @@ img {
 .top {
   padding-bottom: 99px;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
-
   padding-top: 39px;
   padding-bottom: 39px;
 }
@@ -49,7 +49,7 @@ img {
 .header__wrapper {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
 }
 
 .header__link {
@@ -125,6 +125,7 @@ img {
 
   background: #3a68b8;
   border-radius: 5px;
+  border: none;
 }
 
 .button__2 {
@@ -141,6 +142,7 @@ img {
 
   background: #3a68b8;
   border-radius: 5px;
+  border: none;
 }
 
 .top__logos {
@@ -155,12 +157,13 @@ img {
 }
 
 .content {
+  margin: 0 auto;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 362px);
   justify-content: center;
-  padding-top: 264px;
-  padding-bottom: 243px;
+  /* padding-top: 264px; */
+  padding-bottom: 96px;
 }
 
 .item {
@@ -211,11 +214,7 @@ img {
 }
 
 @media (max-width: 1024px) {
-  .top {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 120px;
-  }
+  /* в браузере проверяем на 765px */
 
   .conteiner {
     width: 768px;
@@ -231,9 +230,11 @@ img {
   }
 
   .top__logos__wrapper {
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+    align-items: center;
     gap: 32px;
-    min-width: 650px;
-    margin: auto;
   }
 
   .content {
@@ -249,5 +250,85 @@ img {
 
   .item__big img {
     width: 98px;
+  }
+}
+
+@media (max-width: 765px) {
+  /* в браузере проверяем на 375px */
+
+  .conteiner {
+    width: 343px;
+    margin: 0 auto;
+  }
+
+  .header {
+    display: flex;
+    padding: 39px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header__wrapper {
+    gap: 16px;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
+
+  .top__content {
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+
+  .top__info {
+    width: 343px;
+  }
+
+  .subtitle {
+    margin-bottom: 16px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .title {
+    margin-bottom: 64px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text {
+    width: 343px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .top__buttons {
+    margin-top: 39px;
+    display: flex;
+    width: 343px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .button__1 {
+    display: flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .button__2 {
+    display: flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .content {
+    gap: 32px;
   }
 }
