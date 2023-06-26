@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style-check.css" />
+  </head>
+  <body>
+    <form action="#">
+      <p>
+        <input type="text" autofocus required placeholder="name" />
+      </p>
+      <p>
+        <input type="email" required placeholder="email" />
+      </p>
+      <p>
+        <input type="password" required placeholder="password" />
+      </p>
+      <p>
+        <input min="1" type="number" required placeholder="age" />
+      </p>
+      <p>
+        <input min="1" type="date" placeholder="date of birth" />
+      </p>
+      <p>
+        <input type="number" placeholder="phone number" />
+      </p>
+      <p>
+        <input min="1" type="date" placeholder="slider" />
+      </p>
+      <p>
+        <input
+          min="1"
+          max="10"
+          step="1"
+          type="range"
+          required
+          placeholder="date of birth"
+        />
+      </p>
+      <p>
+        <input id="check" type="checkbox" />
+        <label for="check">Описание чекбокса</label>
+      </p>
+      <button type="submit">Отправить форму</button>
+    </form>
+  </body>
+</html>
