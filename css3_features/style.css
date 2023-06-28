@@ -1,0 +1,208 @@
+/* эффект наведения */
+.menu__link:hover {
+  color: green;
+}
+
+/* эффект при нажатии */
+.menu__link:active {
+  color: rgb(255, 0, 0);
+}
+
+/* обращение к первому элементу списка */
+.menu__list:first-child .menu__link {
+  text-decoration: none;
+}
+
+/* обращение к последниму элементу списка */
+.menu__list:last-child .menu__link {
+  font-weight: bold;
+}
+
+/* обращение к n-ому элементу списка */
+.menu__list:nth-child(3) .menu__link {
+  background-color: orange;
+}
+
+.product {
+  width: 250px;
+  padding: 24px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.product__img {
+  background-color: forestgreen;
+  height: 150px;
+}
+
+/* псевдоэлементы */
+.product_new::after {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  content: "new";
+  width: 35px;
+  height: 35px;
+  background-color: darkred;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_sale::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  content: "sale";
+  width: 35px;
+  height: 35px;
+  background-color: rgb(229, 214, 11);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* меняем цвет svg */
+.icon:hover path {
+  fill: purple;
+}
+
+/* меняем цвет при клике */
+.icon:active path {
+  fill: yellow;
+}
+
+/* эффекты движения */
+.item {
+  width: 150px;
+  height: 86px;
+  background-color: forestgreen;
+  border: 1px solid #000;
+  transition: transform 1s;
+}
+
+/* движение вправо */
+.item_1:hover {
+  transform: translateX(50px);
+}
+
+/* увеличение в два раза */
+.item_2:hover {
+  transform: scale(2);
+}
+
+/* поворот на 60% */
+.item_3:hover {
+  transform: rotate(60deg);
+}
+
+/* делаем восьмиугольник из блоков */
+.content__octagon {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.item__octagon {
+  position: absolute;
+  width: 150px;
+  height: 62px;
+  border: 1px solid #000;
+  background-color: green;
+  color: white;
+}
+
+.item_octagon_1 {
+  transform: rotate(45deg);
+}
+
+.item_octagon_2 {
+  transform: rotate(90deg);
+}
+
+.item_octagon_3 {
+  transform: rotate(-45deg);
+}
+
+/* анимация для кнопки */
+
+.button__box {
+  margin-top: 250px;
+}
+
+/* добавляем из генератора анимаций */
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.button {
+  animation: jello-horizontal 0.9s both;
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
