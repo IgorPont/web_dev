@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clothing store site</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Fasion shop</title>
   </head>
   <body>
     <div class="top">
@@ -23,7 +24,7 @@
             </button>
           </div>
           <div class="header__right">
-            <button class="button__header">
+            <button class="button__header button-menu">
               <img class="header__img" src="img/header_menu.svg" alt="menu" />
             </button>
             <button class="button__header display_none">
@@ -47,19 +48,59 @@
       </div>
       <div class="top__preview">
         <div class="top__preview__wrapper">
-          <div class="header_preview display_none">
-            <img
-              class="img_header_preview"
-              src="img/header_preview.svg"
-              alt="preview"
-            />
+          <div class="banner">
+            <div class="header_preview display_none">
+              <img
+                class="img_header_preview"
+                src="img/header_preview.svg"
+                alt="preview"
+              />
+            </div>
+            <div class="logo_big">
+              <img
+                class="img__logo__big"
+                src="img/preview_logo_big.svg"
+                alt="logo_big"
+              />
+            </div>
           </div>
-          <div class="logo_big">
-            <img
-              class="img__logo__big header__img"
-              src="img/preview_logo_big.svg"
-              alt="logo_big"
-            />
+          <div class="menu-active hidden">
+            <div class="menu-active__all">
+              <!-- <button class="menu-close">
+                <img src="img/menu_close.svg" alt="close" />
+              </button> -->
+              <h4 class="menu-heading">MENU</h4>
+              <div class="menu-man">
+                <h5 class="menu-text">MAN</h5>
+                <ul class="menu-list">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Bags</a></li>
+                  <li><a href="#">Denim</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                </ul>
+              </div>
+              <div class="menu-woman">
+                <h5 class="menu-text">WOMAN</h5>
+                <ul class="menu-list">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Jackets &amp; Coats</a></li>
+                  <li><a href="#">Polos</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Shirts</a></li>
+                </ul>
+              </div>
+              <div class="menu-kids">
+                <h5 class="menu-text">KIDS</h5>
+                <ul class="menu-list">
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Jackets &amp; Coats</a></li>
+                  <li><a href="#">Polos</a></li>
+                  <li><a href="#">T-Shirts</a></li>
+                  <li><a href="#">Shirts</a></li>
+                  <li><a href="#">Bags</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
