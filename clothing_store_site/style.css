@@ -126,6 +126,7 @@ img {
   right: 0;
   width: 232px;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .menu-heading {
